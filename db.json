@@ -62,3 +62,132 @@
                 }
             ]
         },
+
+                
+       
+        {
+            "name": "North America",
+            "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "description": "Experience the diverse landscapes and cultures of North America.",
+            "topDestinations": [
+                {
+                    "name": "New York, USA",
+                    "image": "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "The city that never sleeps, full of iconic landmarks.",
+                    "features": [
+                        "Statue of Liberty",
+                        "Times Square",
+                        "Central Park",
+                        "Broadway Shows",
+                        "Empire State Building"
+                    ]
+                },
+                {
+                    "name": "Cancun, Mexico",
+                    "image": "https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Tropical paradise with white sand beaches and ancient ruins.",
+                    "features": [
+                        "Mayan Ruins",
+                        "Crystal Clear Waters",
+                        "Vibrant Nightlife",
+                        "Cenotes",
+                        "Water Sports"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "South America",
+            "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "description": "Explore the diverse landscapes from Amazon to Andes.",
+            "topDestinations": [
+                {
+                    "name": "Rio de Janeiro, Brazil",
+                    "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Vibrant city known for its Carnival, beaches, and Christ the Redeemer.",
+                    "features": [
+                        "Christ the Redeemer",
+                        "Sugarloaf Mountain",
+                        "Copacabana Beach",
+                        "Samba Culture",
+                        "Tijuca Forest"
+                    ]
+                },
+                {
+                    "name": "Machu Picchu, Peru",
+                    "image": "https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Ancient Inca city high in the Andes mountains.",
+                    "features": [
+                        "Inca Trail",
+                        "Historic Sanctuary",
+                        "Stunning Views",
+                        "Archaeological Wonder",
+                        "Sacred Valley"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Africa",
+            "image": "https://images.unsplash.com/photo-1442570468985-f63ed5de9086?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "description": "Experience the wild beauty and rich cultures of Africa.",
+            "topDestinations": [
+                {
+                    "name": "Cape Town, South Africa",
+                    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Stunning coastal city with Table Mountain and penguins.",
+                    "features": [
+                        "Table Mountain",
+                        "Robben Island",
+                        "Cape of Good Hope",
+                        "Penguin Beach",
+                        "Wine Country"
+                    ]
+                },
+                {
+                    "name": "Marrakech, Morocco",
+                    "image": "https://images.unsplash.com/photo-1518544866330-95a3b8365ab3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Vibrant city with bustling souks and stunning palaces.",
+                    "features": [
+                        "Jemaa el-Fnaa Square",
+                        "Bahia Palace",
+                        "Majorelle Garden",
+                        "Atlas Mountains",
+                        "Traditional Riads"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oceania",
+            "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "description": "Discover the islands and landscapes of the Pacific.",
+            "topDestinations": [
+                {
+                    "name": "Sydney, Australia",
+                    "image": "https://images.unsplash.com/photo-1523428096881-5bd79d043006?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Iconic harbor city with the Opera House and Harbour Bridge.",
+                    "features": [
+                        "Sydney Opera House",
+                        "Harbour Bridge",
+                        "Bondi Beach",
+                        "Blue Mountains",
+                        "Koalas and Kangaroos"
+                    ]
+                },
+                {
+                    "name": "Queenstown, New Zealand",
+                    "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Adventure capital with stunning alpine scenery.",
+                    "features": [
+                        "Bungee Jumping",
+                        "Milford Sound",
+                        "Ski Resorts",
+                        "Lord of the Rings Locations",
+                        "Lake Wakatipu"
+                    ]
+                }
+            ]
+        }
+    ]
+}
