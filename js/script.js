@@ -44,3 +44,34 @@ document.addEventListener('DOMContentLoaded', function() {
             continentsContainer.appendChild(continentCard);
         });
     }
+     // Show destinations for selected continent
+     function showDestinations(continent) {
+        document.querySelector('.continent-selection').classList.add('hidden');
+        destinationsSection.classList.remove('hidden');
+        
+        continentTitle.querySelector('span').textContent = continent.name;
+        destinationsContainer.innerHTML = '';
+        
+        // Display top 2 destinations (changed from 5)
+        continent.topDestinations.slice(0, 2).forEach(destination => {
+            const destinationCard = document.createElement('div');
+            destinationCard.className = 'destination-card';
+            
+            destinationCard.innerHTML = `
+                <img src="${destination.image}" alt="${destination.name}" class="destination-image">
+                <div class="destination-info">
+                    <h3>${destination.name}</h3>
+                    <p>${destination.description}</p>
+                    <div class="destination-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            ${destination.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            
+            destinationsContainer.appendChild(destinationCard);
+        });
+    }
+});
