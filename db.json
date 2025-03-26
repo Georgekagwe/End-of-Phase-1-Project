@@ -31,3 +31,34 @@
                 }
             ]
         },
+        {
+            "name": "Asia",
+            "image": "https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "description": "Discover the ancient traditions and modern wonders of Asia.",
+            "topDestinations": [
+                {
+                    "name": "Kyoto, Japan",
+                    "image": "https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "A historic city with beautiful temples and cherry blossoms.",
+                    "features": [
+                        "Fushimi Inari Shrine",
+                        "Kinkaku-ji (Golden Pavilion)",
+                        "Arashiyama Bamboo Forest",
+                        "Gion District",
+                        "Traditional Tea Ceremonies"
+                    ]
+                },
+                {
+                    "name": "Bali, Indonesia",
+                    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+                    "description": "Tropical paradise with lush landscapes and vibrant culture.",
+                    "features": [
+                        "Ubud Monkey Forest",
+                        "Tegallalang Rice Terraces",
+                        "Uluwatu Temple",
+                        "Beautiful Beaches",
+                        "Balinese Temples"
+                    ]
+                }
+            ]
+        },
