@@ -1,25 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // DOM Elements
     const continentsContainer = document.getElementById('continents-container');
     const destinationsContainer = document.getElementById('destinations-container');
     const destinationsSection = document.getElementById('destinations-section');
     const continentTitle = document.getElementById('continent-title');
     const backButton = document.getElementById('back-button');
+    const baseURL = 'http://localhost:3000/continents'
 
-    // Data fetched from db.json
-    fetch('db.json')
-        .then(response => response.json())
+    // Fetch data from db.json
+    fetch(baseURL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
-            // Load continents
-            loadContinents(data.continents);
-            
-            // Back button event to go back to contnents
-            backButton.addEventListener('click', function() {
-                goBackToContinents();
-            });
+            loadContinents(data); // Fixed: data is likely an array, not an object
 
-             // "Escape" key to go go back to continents
-            document.addEventListener('keydown', function(event) {
+            // Event Listeners
+            backButton.addEventListener('click', goBackToContinents);
+            document.addEventListener('keydown', function (event) {
                 if (event.key === 'Escape') {
                     goBackToContinents();
                 }
@@ -30,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to load continents
     function loadContinents(continents) {
         continentsContainer.innerHTML = '';
-        
+
         continents.forEach(continent => {
             const continentCard = document.createElement('div');
             continentCard.className = 'continent-card';
-            
+
             continentCard.innerHTML = `
                 <img src="${continent.image}" alt="${continent.name}" class="continent-image">
                 <div class="continent-info">
@@ -42,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>${continent.description}</p>
                 </div>
             `;
-            
-            continentCard.addEventListener('click', function() {
+
+            continentCard.addEventListener('click', function () {
                 showDestinations(continent);
             });
-            
+
             continentsContainer.appendChild(continentCard);
         });
     }
@@ -55,15 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function showDestinations(continent) {
         document.querySelector('.continent-selection').classList.add('hidden');
         destinationsSection.classList.remove('hidden');
-        
+
         continentTitle.querySelector('span').textContent = continent.name;
         destinationsContainer.innerHTML = '';
-        
+
         // Display top 2 destinations
         continent.topDestinations.slice(0, 2).forEach(destination => {
             const destinationCard = document.createElement('div');
             destinationCard.className = 'destination-card';
-            
+
             destinationCard.innerHTML = `
                 <img src="${destination.image}" alt="${destination.name}" class="destination-image">
                 <div class="destination-info">
@@ -77,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
             `;
-            
+
             destinationsContainer.appendChild(destinationCard);
         });
     }
