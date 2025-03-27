@@ -6,22 +6,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const continentTitle = document.getElementById('continent-title');
     const backButton = document.getElementById('back-button');
 
-    // Fetch data from db.json
+    // Data fetched from db.json
     fetch('db.json')
         .then(response => response.json())
         .then(data => {
             // Load continents
             loadContinents(data.continents);
             
-            // Back button event listener
+            // Back button event to go back to contnents
             backButton.addEventListener('click', function() {
-                destinationsSection.classList.add('hidden');
-                document.querySelector('.continent-selection').classList.remove('hidden');
+                goBackToContinents();
+            });
+
+             // "Escape" key to go go back to continents
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    goBackToContinents();
+                }
             });
         })
         .catch(error => console.error('Error loading data:', error));
 
-        // Load continents function
+    // Function to load continents
     function loadContinents(continents) {
         continentsContainer.innerHTML = '';
         
@@ -44,15 +50,16 @@ document.addEventListener('DOMContentLoaded', function() {
             continentsContainer.appendChild(continentCard);
         });
     }
-     // Show destinations for selected continent
-     function showDestinations(continent) {
+
+    // Showing destinations for selected continent
+    function showDestinations(continent) {
         document.querySelector('.continent-selection').classList.add('hidden');
         destinationsSection.classList.remove('hidden');
         
         continentTitle.querySelector('span').textContent = continent.name;
         destinationsContainer.innerHTML = '';
         
-        // Display top 2 destinations (changed from 5)
+        // Display top 2 destinations
         continent.topDestinations.slice(0, 2).forEach(destination => {
             const destinationCard = document.createElement('div');
             destinationCard.className = 'destination-card';
@@ -73,5 +80,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             destinationsContainer.appendChild(destinationCard);
         });
+    }
+
+    // Function to go back to continent selection
+    function goBackToContinents() {
+        destinationsSection.classList.add('hidden');
+        document.querySelector('.continent-selection').classList.remove('hidden');
     }
 });
