@@ -135,7 +135,7 @@
       "topDestinations": [
         {
           "name": "Cape Town, South Africa",
-          "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FwZSUyMHRvd258ZW58MHx8MHx8fDA%3D",
           "description": "Stunning coastal city with Table Mountain and penguins.",
           "features": [
             "Table Mountain",
@@ -147,7 +147,7 @@
         },
         {
           "name": "Marrakech, Morocco",
-          "image": "https://images.unsplash.com/photo-1518544866330-95a3b8365ab3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "image": "https://images.unsplash.com/photo-1580746738099-1cb74f972feb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFycmFrZWNofGVufDB8fDB8fHww",
           "description": "Vibrant city with bustling souks and stunning palaces.",
           "features": [
             "Jemaa el-Fnaa Square",
